@@ -1,0 +1,375 @@
+@charset "UTF-8";
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+    width: 100%;
+}
+
+p {
+    font-family: var(--font-fontFamily);
+    color: var(--text-color);
+}
+
+:root {
+    --text-color: rgb(248, 252, 255);
+    --font-fontFamily: "Shippori Mincho", serif;
+    --text2-color: #402626;
+    --maxWidth-max-width: 1600px;
+
+}
+
+.huwa {
+    opacity: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: var(--maxWidth-max-width);
+    background: url(./img/whitewashi.jpg) center/cover no-repeat;
+
+}
+
+.left {
+    width: 60px;
+    opacity: 0;
+}
+
+header li:first-of-type img {
+    width: 50px;
+    height: fit-content;
+}
+
+header nav {
+    border-bottom: 1px solid #402626;
+    padding: 20px 30px 10px;
+
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    max-width: 1200px;
+
+}
+
+header ul li a {
+    font-family: var(--font-fontFamily);
+    color: var(--text2-color);
+    font-weight: 600;
+}
+
+header ul li:hover a,
+.language ul li:hover {
+    transition: all 0.3s;
+    scale: 1.03;
+}
+
+.language ul {
+    display: flex;
+    gap: 20px;
+    color: var(--text2-color);
+    font-family: var(--font-fontFamily);
+    cursor: pointer;
+
+}
+
+.reservation {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 200;
+    border: 1px solid rgb(248, 252, 255);
+    border-radius: 20px;
+    padding: 13px 7px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+}
+
+.reservation::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent rgb(248, 252, 255);
+    border-style: solid;
+    border-width: 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+}
+
+.reservation a {
+    writing-mode: vertical-rl;
+    letter-spacing: 3px;
+    font-family: var(--font-fontFamily);
+    transition: all 0.2s;
+}
+
+.reservation:hover {
+    background-color: rgba(248, 252, 255, 0.5);
+
+}
+
+.reservation:hover a {
+    color: rgb(0, 0, 0);
+}
+
+.introduction {
+    background: url(./img/whitewashi.jpg) center/cover repeat-y;
+    text-align: center;
+    color: var(--text2-color);
+    font-family: var(--font-fontFamily);
+    padding: 150px 0 300px;
+    position: relative;
+}
+
+.introduction::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 150px;
+    border: 1px solid #402626;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+.introduction p {
+    color: var(--text2-color);
+    padding-top: 50px;
+    line-height: 3;
+    letter-spacing: 1px;
+}
+
+.menu {
+    background: url(./img/whitewashi.jpg) center/contain repeat;
+    padding-bottom: 150px;
+}
+
+.dinner,
+.morning {
+    width: 73%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    color: var(--text2-color);
+    font-family: var(--font-fontFamily);
+}
+
+.dinner {
+    margin-bottom: 150px;
+}
+
+h2 {
+    height: 100px;
+    text-align: center;
+    padding: 0 7px;
+    writing-mode: vertical-rl;
+    border: 1px solid #402626;
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-size: 18px;
+    position: relative;
+}
+
+h2::after,
+h3::after {
+    content: "";
+    display: block;
+    height: 200px;
+    border: 1px solid #402626;
+    position: absolute;
+    bottom: -220px;
+    left: 50%;
+}
+
+h3::after {
+    height: 0;
+    width: 130px;
+    bottom: 10px;
+    left: -160px;
+}
+
+h3 {
+    padding-top: 100px;
+    position: absolute;
+    top: 0;
+    right: -180px;
+    font-weight: normal;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.dinnercontent {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.dinnercook {
+    width: 620px;
+    display: flex;
+    gap: 15px;
+}
+
+.dinnercook li {
+    transition: all 0.3s;
+}
+
+.dinnercook li:hover {
+    scale: 1.03;
+}
+
+.top,
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.top li:first-of-type img {
+    padding-left: 20px;
+}
+
+.bottom li:nth-of-type(2) {
+    padding-right: 20px;
+}
+
+.osinagaki {
+    writing-mode: vertical-rl;
+    letter-spacing: 2px;
+}
+
+h4 {
+    padding-left: 50px;
+}
+
+.list li {
+    line-height: 2.8;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0 20px;
+    max-width: var(--maxWidth-max-width);
+    background-color: #4d3838;
+}
+
+.footerinner {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.insta {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.insta img {
+    width: 30px;
+}
+
+.pagecontent {
+    display: flex;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.page li {
+    padding-bottom: 20px;
+}
+
+.page li a {
+    font-family: var(--font-fontFamily);
+    position: relative;
+    white-space: nowrap;
+
+}
+
+.page li a::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(248, 252, 255) rgb(248, 252, 255) transparent transparent;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 8px;
+    left: -20px;
+}
+
+.footerspan {
+    text-align: center;
+    color: var(--text-color);
+    font-family: var(--font-fontFamily);
+    font-size: 12px;
+}
+
+.adress {
+    padding-top: 20px;
+}
+
+.adress dl {
+    color: var(--text-color);
+    font-family: var(--font-fontFamily);
+    padding-bottom: 30px;
+    display: flex;
+    gap: 30px;
+    white-space: nowrap;
+
+}
+
+.adress dl dt {
+    width: 40%;
+    text-align: left;
+}
+
+.adress dl dd {
+    width: 50%;
+    white-space: nowrap;
+    font-size: 14px;
+    text-align: left;
+}
