@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="花玄庵webサイト">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reservation.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <title>花玄庵webサイト</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html"><img src="./img/logo-kouho.png" alt="ロゴ"></a></li>
+                <li><a href="./index.html">ご挨拶</a></li>
+                <li><a href="./room.html">お部屋</a></li>
+                <li><a href="./bath.html">温泉</a></li>
+                <li><a href="./cook.html">お料理</a></li>
+                <li><a href="./reservation.html">ご予約</a></li>
+                <li><a href="./access.html">アクセス</a></li>
+                <li><a href="./question.html">ご質問</a></li>
+            </ul>
+        </nav>
+        <div class="language">
+            <ul>
+                <li>JP</li>
+                <li>EN</li>
+            </ul>
+        </div>
+    </header>
+    <div class="topimg"></div>
+    <div class="content">
+        <div class="reservation">
+            <a href="">宿泊予約</a>
+        </div>
+        <div class="inner">
+            <h1>ご予約</h1>
+            <div class="top">
+                <h2>検索から探す</h2>
+                <div class="flex">
+                    <div class="reserchtop">
+                        <div class="br">
+                            <label for="check1">
+                                チェックイン-チェックアウト
+                            </label>
+                            <input type="date" id="check1" name="date">
+                        </div>
+                        <div class="br">
+                            <label for="room">
+                                部屋数
+                            </label>
+                            <select name="room" id="room">
+                                <option value="1r">1部屋</option>
+                                <option value="2r">2部屋</option>
+                                <option value="3r">3部屋</option>
+                                <option value="4r">4部屋</option>
+                            </select>
+                        </div>
+                        <div class="br">
+                            <label for="adult">
+                                大人
+                            </label>
+                            <select name="adult" id="adult">
+                                <option value="1A">1人</option>
+                                <option value="2A">2人</option>
+                                <option value="3A">3人</option>
+                                <option value="4A">4人</option>
+                                <option value="5A">5人</option>
+                                <option value="6A">6人</option>
+                                <option value="7A">7人</option>
+                                <option value="8A">8人</option>
+                                <option value="9A">9人</option>
+                                <option value="10A">10人</option>
+                            </select>
+                        </div>
+                        <div class="br">
+                            <label for="child">
+                                小人
+                            </label>
+                            <select name="child" id="child">
+                                <option value="1c">1人</option>
+                                <option value="2c">2人</option>
+                                <option value="3c">3人</option>
+                                <option value="4c">4人</option>
+                                <option value="5c">5人</option>
+                                <option value="6c">6人</option>
+                                <option value="7c">7人</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reserchcenter">
+                        <div class="meal">
+                            <label for="cooking">食事</label>
+                            <select name="cooking" id="cooking">
+                                <option value="none">指定しない</option>
+                                <option value="none">食事なし</option>
+                                <option value="none">朝のみ</option>
+                                <option value="none">夕のみ</option>
+                                <option value="none">朝・夕</option>
+                            </select>
+                        </div>
+                        <div class="money">
+                            <div class="budgetinner">
+                                <label for="budget1">ご予算</label>
+                                <select name="budget" id="budget1">
+                                    <option value="上限なし">下限なし</option>
+                                    <option value="15,000">15,000円</option>
+                                    <option value="20,000">20,000円</option>
+                                    <option value="25,000">25,000円</option>
+                                    <option value="30,000">30,000円</option>
+                                    <option value="35,000">35,000円</option>
+                                    <option value="40,000">40,000円</option>
+                                    <option value="45,000">45,000円</option>
+                                    <option value="50,000">50,000円</option>
+                                </select>
+                                <span>～</span>
+                                <label for="budget2"></label>
+                                <select name="budget" id="budget2">
+                                    <option value="上限なし">上限なし</option>
+                                    <option value="55,000">55,000円</option>
+                                    <option value="60,000">60,000円</option>
+                                    <option value="65,000">65,000円</option>
+                                    <option value="70,000">70,000円</option>
+                                    <option value="75,000">75,000円</option>
+                                    <option value="80,000">80,000円</option>
+                                    <option value="85,000">85,000円</option>
+                                    <option value="90,000">90,000円</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reserchbottom">
+                        <div class="roomdetail">
+                            <p>部屋タイプ</p>
+                            <div class="button">
+                                <input type="checkbox" id="washitu" name="washitu">
+                                <label for="washitu">和室</label>
+                            </div>
+                            <div class="button">
+                                <input type="checkbox" id="wayoushitu" name="wayousitu">
+                                <label for="wayoushitu">和洋室</label>
+                            </div>
+                            <p class="serch">検索する</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottomtop">
+                <h2>プラン一覧</h2>
+                <div class="text">
+                    <h3>離れ一棟貸し<span>潮騒</span>朝・夕食付プラン</h3>
+                    <p>ご家族やグループにもおすすめの一戸建ての離れです。<br>
+                        お風呂は専用露天風呂がついており、<br class="kai">ゆっくりとお寛ぎになっていただけます。<br>
+                        朝食は和食御膳、夕食は国産牛と海鮮を使ったコースを<br class="kai">ご用意しております。
+                    </p>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="img">
+                    <img src="./img/room4.jpg" alt="">
+                </div>
+                <div class="detailright">
+                    <dl class="detail">
+                        <dt>お食事：</dt>
+                        <dd>朝・夕</dd>
+                        <dt>チェックイン：</dt>
+                        <dd>15:00</dd>
+                        <dt>チェックアウト：</dt>
+                        <dd>11:00</dd>
+                        <dt>一泊/一人料金</dt>
+                        <dd>￥15,560-27,120</dd>
+                    </dl>
+                    <div class="hako">
+                        <p>専用露天風呂付</p>
+                        <p>定員4名まで</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reserchtop">
+                <div class="br">
+                    <label for="check2">
+                        チェックイン-チェックアウト
+                    </label>
+                    <input type="date" id="check2" name="date">
+                </div>
+                <div class="br">
+                    <label for="room">
+                        部屋数
+                    </label>
+                    <select name="room" id="room2">
+                        <option value="1r">1部屋</option>
+                        <option value="2r">2部屋</option>
+                        <option value="3r">3部屋</option>
+                        <option value="4r">4部屋</option>
+                    </select>
+                </div>
+                <div class="br">
+                    <label for="adult2">
+                        大人
+                    </label>
+                    <select name="adult" id="adult2">
+                        <option value="1A">1人</option>
+                        <option value="2A">2人</option>
+                        <option value="3A">3人</option>
+                        <option value="4A">4人</option>
+                        <option value="5A">5人</option>
+                        <option value="6A">6人</option>
+                        <option value="7A">7人</option>
+                        <option value="8A">8人</option>
+                        <option value="9A">9人</option>
+                        <option value="10A">10人</option>
+                    </select>
+                </div>
+                <div class="br">
+                    <label for="child2">
+                        小人
+                    </label>
+                    <select name="child" id="child2">
+                        <option value="1c">1人</option>
+                        <option value="2c">2人</option>
+                        <option value="3c">3人</option>
+                        <option value="4c">4人</option>
+                    </select>
+                </div>
+            </div>
+            <p class="serchkakunin">検索状況を確認する</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footerinner">
+            <div class="logo">
+                <img src="./img/kagenan.png" alt="ロゴ">
+            </div>
+            <div class="center">
+                <div class="pagecontent">
+                    <ul class="page">
+                        <li><a href="./index.html">ご挨拶</a></li>
+                        <li><a href="./room.html">お部屋</a></li>
+                        <li><a href="./bath.html">温泉</a></li>
+                        <li><a href="./cook.html">お料理</a></li>
+                    </ul>
+                    <ul class="page">
+                        <li><a href="./reservation.html">ご予約</a></li>
+                        <li><a href="./access.html">アクセス</a></li>
+                        <li><a href="./question.html">ご質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="adress">
+                <dl>
+                    <dt>所在地</dt>
+                    <dd>
+                        <p>〒869-2402</p>
+                        <p>熊本阿蘇郡南小国町</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>受付時間</dt>
+                    <dd>9:00-18:00</dd>
+                </dl>
+                <dl>
+                    <dt>お問い合わせ</dt>
+                    <dd>
+                        <p>TEL:0123-45-6789</p>
+                        <p>FAX:0123-45-6789</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="insta">
+            <img src="./img/instagram.png" alt="インスタグラム">
+            <p>Instagram</p>
+        </div>
+
+        <div class="footerspan">
+            <span>&copy;2022kagenan.</span>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
